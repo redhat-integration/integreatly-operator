@@ -4,7 +4,7 @@ metadata:
   name: example-rhmi
 spec:
   type: managed
-  namespacePrefix: redhat-rhmi-
+  namespacePrefix: redhat-rhi-
   selfSignedCerts: true
   useClusterStorage: 'true'
   smtpSecret: redhat-rhmi-smtp
