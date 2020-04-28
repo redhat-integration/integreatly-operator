@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"reflect"
 
-	resourcesowner "github.com/integr8ly/integreatly-operator/pkg/resources/owner"
+	resourcesowner "github.com/redhat-integration/rhi-operator/pkg/resources/owner"
 
 	"k8s.io/apimachinery/pkg/api/meta"
 

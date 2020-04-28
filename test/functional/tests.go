@@ -1,6 +1,6 @@
 package functional
 
-import "github.com/integr8ly/integreatly-operator/test/common"
+import "github.com/redhat-integration/rhi-operator/test/common"
 
 var (
 	FUNCTIONAL_TESTS = []common.TestCase{

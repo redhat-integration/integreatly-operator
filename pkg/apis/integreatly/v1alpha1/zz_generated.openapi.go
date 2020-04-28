@@ -29,9 +29,9 @@ import (
 
 func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenAPIDefinition {
 	return map[string]common.OpenAPIDefinition{
-		"github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1.RHMI":       schema_pkg_apis_integreatly_v1alpha1_RHMI(ref),
-		"github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1.RHMISpec":   schema_pkg_apis_integreatly_v1alpha1_RHMISpec(ref),
-		"github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1.RHMIStatus": schema_pkg_apis_integreatly_v1alpha1_RHMIStatus(ref),
+		"github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1.RHMI":       schema_pkg_apis_integreatly_v1alpha1_RHMI(ref),
+		"github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1.RHMISpec":   schema_pkg_apis_integreatly_v1alpha1_RHMISpec(ref),
+		"github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1.RHMIStatus": schema_pkg_apis_integreatly_v1alpha1_RHMIStatus(ref),
 	}
 }
 
@@ -63,19 +63,19 @@ func schema_pkg_apis_integreatly_v1alpha1_RHMI(ref common.ReferenceCallback) com
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1.RHMISpec"),
+							Ref: ref("github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1.RHMISpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1.RHMIStatus"),
+							Ref: ref("github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1.RHMIStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1.RHMISpec", "github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1.RHMIStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1.RHMISpec", "github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1.RHMIStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -119,7 +119,7 @@ func schema_pkg_apis_integreatly_v1alpha1_RHMISpec(ref common.ReferenceCallback)
 					},
 					"pullSecret": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1.PullSecretSpec"),
+							Ref: ref("github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1.PullSecretSpec"),
 						},
 					},
 					"useClusterStorage": {
@@ -161,7 +161,7 @@ func schema_pkg_apis_integreatly_v1alpha1_RHMISpec(ref common.ReferenceCallback)
 			},
 		},
 		Dependencies: []string{
-			"github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1.PullSecretSpec"},
+			"github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1.PullSecretSpec"},
 	}
 }
 
@@ -180,7 +180,7 @@ func schema_pkg_apis_integreatly_v1alpha1_RHMIStatus(ref common.ReferenceCallbac
 								Allows: true,
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1.RHMIStageStatus"),
+										Ref: ref("github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1.RHMIStageStatus"),
 									},
 								},
 							},
@@ -227,6 +227,6 @@ func schema_pkg_apis_integreatly_v1alpha1_RHMIStatus(ref common.ReferenceCallbac
 			},
 		},
 		Dependencies: []string{
-			"github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1.RHMIStageStatus"},
+			"github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1.RHMIStageStatus"},
 	}
 }

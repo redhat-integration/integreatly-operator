@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/integr8ly/integreatly-operator/test/resources"
+	"github.com/redhat-integration/rhi-operator/test/resources"
 	"github.com/keycloak/keycloak-operator/pkg/apis/keycloak/v1alpha1"
 	v12 "github.com/openshift/api/authorization/v1"
 	configv1 "github.com/openshift/api/config/v1"

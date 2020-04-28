@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/integr8ly/integreatly-operator/test/resources"
+	"github.com/redhat-integration/rhi-operator/test/resources"
 	v1 "github.com/openshift/api/route/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )

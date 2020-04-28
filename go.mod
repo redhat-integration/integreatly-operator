@@ -1,4 +1,4 @@
-module github.com/integr8ly/integreatly-operator
+module github.com/redhat-integration/rhi-operator
 
 go 1.13
 

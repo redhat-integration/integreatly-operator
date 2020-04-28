@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/integr8ly/integreatly-operator/pkg/resources/constants"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/constants"
 
 	v1 "k8s.io/api/apps/v1"
 
 	apicuritov1alpha1 "github.com/apicurio/apicurio-operators/apicurito/pkg/apis/apicur/v1alpha1"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/events"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/owner"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/events"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/owner"
 	appsv1 "github.com/openshift/api/apps/v1"
 	routev1 "github.com/openshift/api/route/v1"
 	corev1 "k8s.io/api/core/v1"
@@ -21,11 +21,11 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
 	monitoringv1 "github.com/coreos/prometheus-operator/pkg/apis/monitoring/v1"
-	integreatlyv1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1"
-	"github.com/integr8ly/integreatly-operator/pkg/config"
-	"github.com/integr8ly/integreatly-operator/pkg/resources"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/backup"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/marketplace"
+	integreatlyv1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1"
+	"github.com/redhat-integration/rhi-operator/pkg/config"
+	"github.com/redhat-integration/rhi-operator/pkg/resources"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/backup"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/marketplace"
 	"github.com/sirupsen/logrus"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/tools/record"

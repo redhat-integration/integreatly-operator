@@ -10,7 +10,7 @@
 package v1beta1
 
 import (
-	enmassev1beta1 "github.com/integr8ly/integreatly-operator/pkg/apis-products/enmasse/enmasse/v1beta1"
+	enmassev1beta1 "github.com/redhat-integration/rhi-operator/pkg/apis-products/enmasse/enmasse/v1beta1"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"

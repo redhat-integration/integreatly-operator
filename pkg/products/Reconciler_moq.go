@@ -5,7 +5,7 @@ package products
 
 import (
 	"context"
-	"github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1"
+	"github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sync"

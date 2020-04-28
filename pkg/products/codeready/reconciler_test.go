@@ -14,11 +14,11 @@ import (
 	types2 "github.com/integr8ly/cloud-resource-operator/pkg/apis/integreatly/v1alpha1/types"
 
 	monitoring "github.com/integr8ly/application-monitoring-operator/pkg/apis/applicationmonitoring/v1alpha1"
-	kafkav1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis-products/kafka.strimzi.io/v1alpha1"
-	integreatlyv1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1"
-	moqclient "github.com/integr8ly/integreatly-operator/pkg/client"
-	"github.com/integr8ly/integreatly-operator/pkg/resources"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/marketplace"
+	kafkav1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis-products/kafka.strimzi.io/v1alpha1"
+	integreatlyv1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1"
+	moqclient "github.com/redhat-integration/rhi-operator/pkg/client"
+	"github.com/redhat-integration/rhi-operator/pkg/resources"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/marketplace"
 	keycloak "github.com/keycloak/keycloak-operator/pkg/apis/keycloak/v1alpha1"
 
 	projectv1 "github.com/openshift/api/project/v1"
@@ -38,7 +38,7 @@ import (
 	k8sclient "sigs.k8s.io/controller-runtime/pkg/client"
 	fakeclient "sigs.k8s.io/controller-runtime/pkg/client/fake"
 
-	"github.com/integr8ly/integreatly-operator/pkg/config"
+	"github.com/redhat-integration/rhi-operator/pkg/config"
 )
 
 var testKeycloakClient = &keycloak.KeycloakClient{

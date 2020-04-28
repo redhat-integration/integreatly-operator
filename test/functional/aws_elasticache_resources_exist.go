@@ -7,9 +7,9 @@ import (
 	"github.com/aws/aws-sdk-go/service/elasticache"
 	crov1 "github.com/integr8ly/cloud-resource-operator/pkg/apis/integreatly/v1alpha1"
 	croTypes "github.com/integr8ly/cloud-resource-operator/pkg/apis/integreatly/v1alpha1/types"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/constants"
-	"github.com/integr8ly/integreatly-operator/test/common"
-	"github.com/integr8ly/integreatly-operator/test/resources"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/constants"
+	"github.com/redhat-integration/rhi-operator/test/common"
+	"github.com/redhat-integration/rhi-operator/test/resources"
 	"k8s.io/apimachinery/pkg/types"
 	"testing"
 )

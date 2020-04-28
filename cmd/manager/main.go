@@ -15,11 +15,11 @@ import (
 	"k8s.io/client-go/rest"
 
 	monitoringv1 "github.com/coreos/prometheus-operator/pkg/apis/monitoring/v1"
-	"github.com/integr8ly/integreatly-operator/pkg/apis"
-	integreatlyv1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1"
-	"github.com/integr8ly/integreatly-operator/pkg/controller"
-	integreatlymetrics "github.com/integr8ly/integreatly-operator/pkg/metrics"
-	"github.com/integr8ly/integreatly-operator/version"
+	"github.com/redhat-integration/rhi-operator/pkg/apis"
+	integreatlyv1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1"
+	"github.com/redhat-integration/rhi-operator/pkg/controller"
+	integreatlymetrics "github.com/redhat-integration/rhi-operator/pkg/metrics"
+	"github.com/redhat-integration/rhi-operator/version"
 
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"

@@ -8,27 +8,27 @@ import (
 
 	corev1 "k8s.io/api/core/v1"
 
-	"github.com/integr8ly/integreatly-operator/pkg/resources/backup"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/events"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/owner"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/backup"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/events"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/owner"
 
 	"github.com/integr8ly/cloud-resource-operator/pkg/apis/integreatly/v1alpha1/types"
 	"github.com/sirupsen/logrus"
 
-	"github.com/integr8ly/integreatly-operator/pkg/products/monitoring"
+	"github.com/redhat-integration/rhi-operator/pkg/products/monitoring"
 
 	upsv1alpha1 "github.com/aerogear/unifiedpush-operator/pkg/apis/push/v1alpha1"
 
 	monitoringv1alpha1 "github.com/integr8ly/application-monitoring-operator/pkg/apis/applicationmonitoring/v1alpha1"
 	croUtil "github.com/integr8ly/cloud-resource-operator/pkg/resources"
-	integreatlyv1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1"
-	"github.com/integr8ly/integreatly-operator/pkg/config"
-	"github.com/integr8ly/integreatly-operator/pkg/resources"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/marketplace"
+	integreatlyv1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1"
+	"github.com/redhat-integration/rhi-operator/pkg/config"
+	"github.com/redhat-integration/rhi-operator/pkg/resources"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/marketplace"
 
 	routev1 "github.com/openshift/api/route/v1"
 
-	"github.com/integr8ly/integreatly-operator/pkg/resources/constants"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/constants"
 	appsv1 "k8s.io/api/apps/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"

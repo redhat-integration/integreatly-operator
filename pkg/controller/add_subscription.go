@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"github.com/integr8ly/integreatly-operator/pkg/controller/subscription"
+	"github.com/redhat-integration/rhi-operator/pkg/controller/subscription"
 )
 
 func init() {

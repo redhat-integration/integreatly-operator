@@ -17,12 +17,12 @@ import (
 	routev1 "github.com/openshift/api/route/v1"
 
 	monitoring "github.com/integr8ly/application-monitoring-operator/pkg/apis/applicationmonitoring/v1alpha1"
-	kafkav1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis-products/kafka.strimzi.io/v1alpha1"
-	integreatlyv1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1"
-	moqclient "github.com/integr8ly/integreatly-operator/pkg/client"
-	"github.com/integr8ly/integreatly-operator/pkg/config"
-	"github.com/integr8ly/integreatly-operator/pkg/resources"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/marketplace"
+	kafkav1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis-products/kafka.strimzi.io/v1alpha1"
+	integreatlyv1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1"
+	moqclient "github.com/redhat-integration/rhi-operator/pkg/client"
+	"github.com/redhat-integration/rhi-operator/pkg/config"
+	"github.com/redhat-integration/rhi-operator/pkg/resources"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/marketplace"
 
 	oauthv1 "github.com/openshift/api/oauth/v1"
 	projectv1 "github.com/openshift/api/project/v1"

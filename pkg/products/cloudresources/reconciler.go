@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/integr8ly/integreatly-operator/pkg/resources/constants"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/constants"
 
 	"github.com/sirupsen/logrus"
 
@@ -12,10 +12,10 @@ import (
 	crov1alpha1Types "github.com/integr8ly/cloud-resource-operator/pkg/apis/integreatly/v1alpha1/types"
 	croUtil "github.com/integr8ly/cloud-resource-operator/pkg/resources"
 
-	integreatlyv1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1"
-	"github.com/integr8ly/integreatly-operator/pkg/resources"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/backup"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/events"
+	integreatlyv1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1"
+	"github.com/redhat-integration/rhi-operator/pkg/resources"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/backup"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/events"
 
 	k8serr "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -23,8 +23,8 @@ import (
 	"k8s.io/client-go/tools/record"
 	k8sclient "sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/integr8ly/integreatly-operator/pkg/config"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/marketplace"
+	"github.com/redhat-integration/rhi-operator/pkg/config"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/marketplace"
 )
 
 const (

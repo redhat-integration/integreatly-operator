@@ -1,5 +1,5 @@
 #OCM_IMAGE=registry.svc.ci.openshift.org/openshift/release:intly-golang-1.12
-#OCM=docker run --rm -it -u 1000 -v "/home/mnairn/go/src/github.com/integr8ly/integreatly-operator:/integreatly-operator/" -w "/integreatly-operator" -v "${HOME}/tmp-home:/myhome:z" -e "HOME=/myhome" --entrypoint=/usr/local/bin/ocm ${OCM_IMAGE}
+#OCM=docker run --rm -it -u 1000 -v "/home/mnairn/go/src/github.com/redhat-integration/rhi-operator:/integreatly-operator/" -w "/integreatly-operator" -v "${HOME}/tmp-home:/myhome:z" -e "HOME=/myhome" --entrypoint=/usr/local/bin/ocm ${OCM_IMAGE}
 OCM=ocm
 
 .PHONY: ocm/version

@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/integr8ly/integreatly-operator/test/resources"
+	"github.com/redhat-integration/rhi-operator/test/resources"
 	projectv1 "github.com/openshift/api/project/v1"
 	v1 "github.com/openshift/api/route/v1"
 	"k8s.io/apimachinery/pkg/types"

@@ -3,11 +3,11 @@ package resources
 import (
 	"context"
 	"fmt"
-	"github.com/integr8ly/integreatly-operator/pkg/config"
+	"github.com/redhat-integration/rhi-operator/pkg/config"
 	"github.com/sirupsen/logrus"
 	k8serr "k8s.io/apimachinery/pkg/api/errors"
 
-	integreatlyv1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1"
+	integreatlyv1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1"
 
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

@@ -12,12 +12,12 @@ import (
 	threescalev1 "github.com/3scale/3scale-operator/pkg/apis/apps/v1alpha1"
 	keycloak "github.com/keycloak/keycloak-operator/pkg/apis/keycloak/v1alpha1"
 
-	integreatlyv1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1"
-	moqclient "github.com/integr8ly/integreatly-operator/pkg/client"
-	"github.com/integr8ly/integreatly-operator/pkg/resources"
+	integreatlyv1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1"
+	moqclient "github.com/redhat-integration/rhi-operator/pkg/client"
+	"github.com/redhat-integration/rhi-operator/pkg/resources"
 
-	"github.com/integr8ly/integreatly-operator/pkg/config"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/marketplace"
+	"github.com/redhat-integration/rhi-operator/pkg/config"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/marketplace"
 	routev1 "github.com/openshift/api/route/v1"
 	usersv1 "github.com/openshift/api/user/v1"
 

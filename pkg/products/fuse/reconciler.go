@@ -4,21 +4,21 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/integr8ly/integreatly-operator/pkg/resources/constants"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/constants"
 
-	"github.com/integr8ly/integreatly-operator/pkg/resources/backup"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/events"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/owner"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/backup"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/events"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/owner"
 
 	"github.com/sirupsen/logrus"
 
 	syndesisv1alpha1 "github.com/syndesisio/syndesis/install/operator/pkg/apis/syndesis/v1alpha1"
 
-	integreatlyv1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1"
-	"github.com/integr8ly/integreatly-operator/pkg/config"
-	"github.com/integr8ly/integreatly-operator/pkg/products/monitoring"
-	"github.com/integr8ly/integreatly-operator/pkg/resources"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/marketplace"
+	integreatlyv1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1"
+	"github.com/redhat-integration/rhi-operator/pkg/config"
+	"github.com/redhat-integration/rhi-operator/pkg/products/monitoring"
+	"github.com/redhat-integration/rhi-operator/pkg/resources"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/marketplace"
 
 	appsv1 "github.com/openshift/api/apps/v1"
 	routev1 "github.com/openshift/api/route/v1"

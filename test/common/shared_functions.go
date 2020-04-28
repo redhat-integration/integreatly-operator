@@ -22,14 +22,14 @@ import (
 
 	"strings"
 
-	integreatlyv1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1"
+	integreatlyv1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1"
 	corev1 "k8s.io/api/core/v1"
 
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/tools/remotecommand"
 
-	"github.com/integr8ly/integreatly-operator/pkg/apis"
+	"github.com/redhat-integration/rhi-operator/pkg/apis"
 	extscheme "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/scheme"
 	cached "k8s.io/client-go/discovery/cached"
 	cgoscheme "k8s.io/client-go/kubernetes/scheme"

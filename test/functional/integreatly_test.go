@@ -3,7 +3,7 @@ package functional
 import (
 	"testing"
 
-	"github.com/integr8ly/integreatly-operator/test/common"
+	"github.com/redhat-integration/rhi-operator/test/common"
 	runtimeConfig "sigs.k8s.io/controller-runtime/pkg/client/config"
 )
 

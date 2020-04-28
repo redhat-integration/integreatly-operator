@@ -1,7 +1,7 @@
 package metrics
 
 import (
-	"github.com/integr8ly/integreatly-operator/version"
+	"github.com/redhat-integration/rhi-operator/version"
 
 	"github.com/prometheus/client_golang/prometheus"
 )

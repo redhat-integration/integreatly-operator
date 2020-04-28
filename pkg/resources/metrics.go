@@ -9,7 +9,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 	"strings"
 
-	"github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1"
+	"github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1"
 	"github.com/sirupsen/logrus"
 
 	prometheusv1 "github.com/coreos/prometheus-operator/pkg/apis/monitoring/v1"

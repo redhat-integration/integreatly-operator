@@ -5,33 +5,33 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/integr8ly/integreatly-operator/pkg/resources/backup"
-	userHelper "github.com/integr8ly/integreatly-operator/pkg/resources/user"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/backup"
+	userHelper "github.com/redhat-integration/rhi-operator/pkg/resources/user"
 
 	routev1 "github.com/openshift/api/route/v1"
 	"k8s.io/apimachinery/pkg/util/intstr"
 
-	"github.com/integr8ly/integreatly-operator/pkg/products/rhsso"
+	"github.com/redhat-integration/rhi-operator/pkg/products/rhsso"
 	keycloakCommon "github.com/integr8ly/keycloak-client/pkg/common"
 	usersv1 "github.com/openshift/api/user/v1"
 
-	"github.com/integr8ly/integreatly-operator/pkg/resources/events"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/owner"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/events"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/owner"
 
 	keycloak "github.com/keycloak/keycloak-operator/pkg/apis/keycloak/v1alpha1"
 
-	integreatlyv1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1"
+	integreatlyv1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1"
 	"github.com/sirupsen/logrus"
 
-	"github.com/integr8ly/integreatly-operator/pkg/config"
-	"github.com/integr8ly/integreatly-operator/pkg/resources"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/marketplace"
+	"github.com/redhat-integration/rhi-operator/pkg/config"
+	"github.com/redhat-integration/rhi-operator/pkg/resources"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/marketplace"
 
 	appsv1 "github.com/openshift/api/apps/v1"
 	oauthv1 "github.com/openshift/api/oauth/v1"
 	oauthClient "github.com/openshift/client-go/oauth/clientset/versioned/typed/oauth/v1"
 
-	"github.com/integr8ly/integreatly-operator/pkg/resources/constants"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/constants"
 	corev1 "k8s.io/api/core/v1"
 	k8serr "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

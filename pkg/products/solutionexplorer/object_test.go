@@ -1,9 +1,9 @@
 package solutionexplorer
 
 import (
-	solutionExplorerv1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis-products/tutorial-web-app-operator/v1alpha1"
-	integreatlyv1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1"
-	"github.com/integr8ly/integreatly-operator/pkg/resources"
+	solutionExplorerv1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis-products/tutorial-web-app-operator/v1alpha1"
+	integreatlyv1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1"
+	"github.com/redhat-integration/rhi-operator/pkg/resources"
 
 	routev1 "github.com/openshift/api/route/v1"
 

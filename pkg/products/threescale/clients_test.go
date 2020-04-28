@@ -9,7 +9,7 @@ import (
 	"github.com/RHsyseng/operator-utils/pkg/olm"
 
 	threescalev1 "github.com/3scale/3scale-operator/pkg/apis/apps/v1alpha1"
-	"github.com/integr8ly/integreatly-operator/pkg/client"
+	"github.com/redhat-integration/rhi-operator/pkg/client"
 
 	appsv1 "github.com/openshift/api/apps/v1"
 	fakeappsv1Client "github.com/openshift/client-go/apps/clientset/versioned/fake"

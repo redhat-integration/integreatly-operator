@@ -5,24 +5,24 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/integr8ly/integreatly-operator/pkg/resources/backup"
-	userHelper "github.com/integr8ly/integreatly-operator/pkg/resources/user"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/backup"
+	userHelper "github.com/redhat-integration/rhi-operator/pkg/resources/user"
 
 	"k8s.io/apimachinery/pkg/util/intstr"
 
-	"github.com/integr8ly/integreatly-operator/pkg/resources/events"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/events"
 	oauthv1 "github.com/openshift/api/oauth/v1"
 	corev1 "k8s.io/api/core/v1"
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/integr8ly/integreatly-operator/pkg/products/monitoring"
+	"github.com/redhat-integration/rhi-operator/pkg/products/monitoring"
 
 	monitoringv1alpha1 "github.com/integr8ly/application-monitoring-operator/pkg/apis/applicationmonitoring/v1alpha1"
-	integreatlyv1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1"
-	"github.com/integr8ly/integreatly-operator/pkg/config"
-	"github.com/integr8ly/integreatly-operator/pkg/resources"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/marketplace"
+	integreatlyv1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1"
+	"github.com/redhat-integration/rhi-operator/pkg/config"
+	"github.com/redhat-integration/rhi-operator/pkg/resources"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/marketplace"
 	keycloak "github.com/keycloak/keycloak-operator/pkg/apis/keycloak/v1alpha1"
 	"github.com/keycloak/keycloak-operator/pkg/common"
 
@@ -31,7 +31,7 @@ import (
 	usersv1 "github.com/openshift/api/user/v1"
 	oauthClient "github.com/openshift/client-go/oauth/clientset/versioned/typed/oauth/v1"
 
-	"github.com/integr8ly/integreatly-operator/pkg/resources/constants"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/constants"
 	k8serr "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"

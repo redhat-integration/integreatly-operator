@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/integr8ly/integreatly-operator/pkg/resources/backup"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/backup"
 	"github.com/sirupsen/logrus"
 
 	"github.com/operator-framework/operator-lifecycle-manager/pkg/api/apis/operators/v1alpha1"

@@ -3,7 +3,7 @@ package common
 import (
 	"testing"
 
-	"github.com/integr8ly/integreatly-operator/test/metadata"
+	"github.com/redhat-integration/rhi-operator/test/metadata"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

@@ -38,7 +38,7 @@ Download the integreatly-operator project:
 ```sh
 mkdir -p $GOPATH/src/github.com/integr8ly
 cd $GOPATH/src/github.com/integr8ly
-git clone https://github.com/integr8ly/integreatly-operator
+git clone https://github.com/redhat-integration/rhi-operator
 cd integreatly-operator
 ```
 
@@ -240,7 +240,7 @@ Run `make ocm/install/rhmi-addon` to trigger the installation. Once the installa
 - Wait for merge
 - Run `make image/build/push REPO=integreatly`
 - Run `make push/csv REPO=integreatly` (doesn’t affect managed-tenants)
-- Make <release-number> tag on `release-<release-number>` branch and push it to integr8ly/integreatly-operator repo
+- Make <release-number> tag on `release-<release-number>` branch and push it to redhat-integration/rhi-operator repo
 - Make a release in github UI
 - Tell QE, so they can update pipelines to new release-number
 - Take CSV files from deploy/olm-catalog and make a PR to managed-tenants, make any changes as required beforehand.

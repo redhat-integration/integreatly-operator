@@ -11,7 +11,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/integr8ly/integreatly-operator/test/metadata"
+	"github.com/redhat-integration/rhi-operator/test/metadata"
 	"github.com/jstemmer/go-junit-report/formatter"
 	"github.com/jstemmer/go-junit-report/parser"
 )

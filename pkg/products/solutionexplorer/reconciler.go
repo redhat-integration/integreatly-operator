@@ -6,26 +6,26 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/integr8ly/integreatly-operator/pkg/resources/constants"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/constants"
 
-	"github.com/integr8ly/integreatly-operator/version"
+	"github.com/redhat-integration/rhi-operator/version"
 
-	"github.com/integr8ly/integreatly-operator/pkg/resources/backup"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/events"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/owner"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/backup"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/events"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/owner"
 
 	consolev1 "github.com/openshift/api/console/v1"
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/integr8ly/integreatly-operator/pkg/products/monitoring"
+	"github.com/redhat-integration/rhi-operator/pkg/products/monitoring"
 
 	monitoringv1alpha1 "github.com/integr8ly/application-monitoring-operator/pkg/apis/applicationmonitoring/v1alpha1"
-	solutionExplorerv1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis-products/tutorial-web-app-operator/v1alpha1"
-	integreatlyv1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1"
-	"github.com/integr8ly/integreatly-operator/pkg/config"
-	"github.com/integr8ly/integreatly-operator/pkg/resources"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/marketplace"
+	solutionExplorerv1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis-products/tutorial-web-app-operator/v1alpha1"
+	integreatlyv1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1"
+	"github.com/redhat-integration/rhi-operator/pkg/config"
+	"github.com/redhat-integration/rhi-operator/pkg/resources"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/marketplace"
 
 	appsv1 "github.com/openshift/api/apps/v1"
 	oauthv1 "github.com/openshift/api/oauth/v1"
@@ -252,7 +252,7 @@ func (r *Reconciler) reconcileConsoleLink(ctx context.Context, serverClient k8sc
 	}
 
 	_, err := controllerutil.CreateOrUpdate(ctx, serverClient, cl, func() error {
-		cl.Spec.ApplicationMenu.ImageURL = "https://github.com/integr8ly/integreatly-operator/raw/master/assets/icons/Product_Icon-Red_Hat-Managed_Integration_Solution_Explorer-RGB.png"
+		cl.Spec.ApplicationMenu.ImageURL = "https://github.com/redhat-integration/rhi-operator/raw/master/assets/icons/Product_Icon-Red_Hat-Managed_Integration_Solution_Explorer-RGB.png"
 		cl.Spec.ApplicationMenu.Section = "Red Hat Applications"
 		cl.Spec.Href = r.Config.GetHost()
 		cl.Spec.Location = consolev1.ApplicationMenu

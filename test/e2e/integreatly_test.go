@@ -12,11 +12,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/integr8ly/integreatly-operator/test/common"
+	"github.com/redhat-integration/rhi-operator/test/common"
 	"k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"
 
-	"github.com/integr8ly/integreatly-operator/pkg/apis"
-	integreatlyv1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1"
+	"github.com/redhat-integration/rhi-operator/pkg/apis"
+	integreatlyv1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1"
 
 	framework "github.com/operator-framework/operator-sdk/pkg/test"
 	"github.com/operator-framework/operator-sdk/pkg/test/e2eutil"

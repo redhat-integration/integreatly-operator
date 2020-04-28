@@ -4,13 +4,13 @@ import (
 	"bytes"
 	"context"
 	"errors"
-	moqclient "github.com/integr8ly/integreatly-operator/pkg/client"
-	"github.com/integr8ly/integreatly-operator/pkg/config"
+	moqclient "github.com/redhat-integration/rhi-operator/pkg/client"
+	"github.com/redhat-integration/rhi-operator/pkg/config"
 	"k8s.io/apimachinery/pkg/types"
 	"reflect"
 	"testing"
 
-	integreatlyv1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1"
+	integreatlyv1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1"
 
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

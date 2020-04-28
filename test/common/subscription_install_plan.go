@@ -2,7 +2,7 @@ package common
 
 import (
 	"context"
-	"github.com/integr8ly/integreatly-operator/pkg/resources/constants"
+	"github.com/redhat-integration/rhi-operator/pkg/resources/constants"
 	coreosv1alpha1 "github.com/operator-framework/operator-lifecycle-manager/pkg/api/apis/operators/v1alpha1"
 	k8sclient "sigs.k8s.io/controller-runtime/pkg/client"
 	"testing"

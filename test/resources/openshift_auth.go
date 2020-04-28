@@ -10,7 +10,7 @@ import (
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/headzoo/surf/errors"
-	integreatlyv1alpha1 "github.com/integr8ly/integreatly-operator/pkg/apis/integreatly/v1alpha1"
+	integreatlyv1alpha1 "github.com/redhat-integration/rhi-operator/pkg/apis/integreatly/v1alpha1"
 	keycloak "github.com/keycloak/keycloak-operator/pkg/apis/keycloak/v1alpha1"
 	"gopkg.in/headzoo/surf.v1"
 	"k8s.io/apimachinery/pkg/labels"

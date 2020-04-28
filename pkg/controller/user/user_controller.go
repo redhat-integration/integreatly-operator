@@ -2,7 +2,7 @@ package user
 
 import (
 	"context"
-	userHelper "github.com/integr8ly/integreatly-operator/pkg/resources/user"
+	userHelper "github.com/redhat-integration/rhi-operator/pkg/resources/user"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 
 	usersv1 "github.com/openshift/api/user/v1"

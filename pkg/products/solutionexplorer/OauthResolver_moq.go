@@ -4,7 +4,7 @@
 package solutionexplorer
 
 import (
-	"github.com/integr8ly/integreatly-operator/pkg/resources"
+	"github.com/redhat-integration/rhi-operator/pkg/resources"
 	"sync"
 )
 
