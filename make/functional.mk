@@ -1,5 +1,5 @@
 DIR := $(dir $(realpath $(firstword $(MAKEFILE_LIST))))
-INTEGREATLY_OPERATOR_TEST_HARNESS_IMAGE ?= $(REG)/$(ORG)/integreatly-operator-test-harness:latest
+INTEGREATLY_OPERATOR_TEST_HARNESS_IMAGE ?= $(REG)/$(ORG)/rhi-operator-test-harness:latest
 
 .PHONY: image/functional/build
 image/functional/build:
