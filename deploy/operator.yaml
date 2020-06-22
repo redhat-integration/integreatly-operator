@@ -48,5 +48,10 @@ spec:
               value: "rhmi-operator"
             - name: USE_CLUSTER_STORAGE
               value: "true"
+            # setting to true to allow CR creation until e2e automation is in place
+            # (we want customers to create their CR's down the road, but e2e is not making one yet)
             - name: AUTO_INSTALL_AT_STARTUP
-              value: "false"
+              value: "true"
+            # with CR creation temporarily in place, the type again becomes relevant until e2e creation is automated
+            - name: INSTALLATION_TYPE
+                value: "self-managed"
