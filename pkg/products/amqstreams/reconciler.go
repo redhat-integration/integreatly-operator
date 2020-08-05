@@ -127,7 +127,7 @@ func (r *Reconciler) Reconcile(ctx context.Context, installation *integreatlyv1a
 
 	phase, err = r.reconcileSubscription(ctx, serverClient, installation, productNamespace, operatorNamespace)
 	if err != nil || phase != integreatlyv1alpha1.PhaseCompleted {
-		events.HandleError(r.recorder, installation, phase, fmt.Sprintf("Failed to reconcile %s subscription", constants.AMQStreamsSubscriptionName), err)
+		events.HandleError(r.recorder, installation, phase, fmt.Sprintf("Failed to reconcile %s subscription", constants.AMQStreamsSubscriptionPackageName), err)
 		return phase, err
 	}
 
@@ -175,8 +175,7 @@ func (r *Reconciler) handleCreatingComponents(ctx context.Context, client k8scli
 
 		kafka.Name = ClusterName
 		kafka.Namespace = r.Config.GetNamespace()
-
-		kafka.Spec.Kafka.Version = "2.1.1"
+		kafka.Spec.Kafka.Version = "2.5.0"
 		if kafka.Spec.Kafka.Replicas < kafkaReplicas {
 			kafka.Spec.Kafka.Replicas = kafkaReplicas
 		}
@@ -187,7 +186,7 @@ func (r *Reconciler) handleCreatingComponents(ctx context.Context, client k8scli
 		kafka.Spec.Kafka.Config.OffsetsTopicReplicationFactor = offsetsTopicReplicationFactor
 		kafka.Spec.Kafka.Config.TransactionStateLogReplicationFactor = transactionStateLogReplicationFactor
 		kafka.Spec.Kafka.Config.TransactionStateLogMinIsr = "2"
-		kafka.Spec.Kafka.Config.LogMessageFormatVersion = "2.1"
+		kafka.Spec.Kafka.Config.LogMessageFormatVersion = "2.5"
 		kafka.Spec.Kafka.Storage.Type = "persistent-claim"
 		kafka.Spec.Kafka.Storage.Size = "10Gi"
 		kafka.Spec.Kafka.Storage.DeleteClaim = false
@@ -279,12 +278,20 @@ func (r *Reconciler) reconcileSubscription(ctx context.Context, serverClient k8s
 	}
 
 	target := marketplace.Target{
-		Pkg:       constants.AMQStreamsSubscriptionName,
+		Pkg:       constants.AMQStreamsSubscriptionPackageName,
 		Namespace: operatorNamespace,
-		Channel:   marketplace.IntegreatlyChannel,
+		Channel:   constants.AMQStreamsSubscriptionChannelName,
 	}
-	catalogSourceReconciler := marketplace.NewConfigMapCatalogSourceReconciler(
-		manifestPackage,
+
+	indexImage, found := r.Config.GetIndexImage()
+	if !found {
+		err := fmt.Errorf("Required index image environment variable '%s' not defined", config.AMQStreamsIndexImageEnvironmentVariableName)
+		events.HandleError(r.recorder, inst, integreatlyv1alpha1.PhaseFailed, err.Error(), err)
+		return integreatlyv1alpha1.PhaseFailed, err
+	}
+
+	catalogSourceReconciler := marketplace.NewGRPCImageCatalogSourceReconciler(
+		indexImage,
 		serverClient,
 		operatorNamespace,
 		marketplace.CatalogSourceName,
